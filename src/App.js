@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import { Router } from "./routes/router";
+import { TOKEN_NAME } from "./constants/url";
+import { BASE_URL } from "./constants/url";
+import {GlobalContext} from "./contexts/GlobalContext"
+import GlobalStyle from "./GlobalStyle.style";
+import axios from "axios";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [postList, setPostList] = useState([])
+
+  useEffect(() => {
+    const token = window.localStorage.getItem(TOKEN_NAME);
+
+    if (token) {
+      fetchPostList();
+    }
+  }, []);
+
+  const fetchPostList = async () => {
+    try {
+      const token = window.localStorage.getItem(TOKEN_NAME)
+      const config = {
+        headers: {
+          Authorization: token
+        }
+      };
+
+      const response = await axios.get(BASE_URL + "/post", config);
+
+      setPostList(response.data);
+    } catch (error) {
+      console.error(error?.response?.data)
+      window.alert(error?.response?.data)
+    }
+  };
+
+  const context = {
+    postList,
+    fetchPostList
+  };
+
+  return (<>
+    <GlobalStyle />
+    <GlobalContext.Provider value={context}>
+      <Router />
+    </GlobalContext.Provider>
+  </>
   );
 }
 
