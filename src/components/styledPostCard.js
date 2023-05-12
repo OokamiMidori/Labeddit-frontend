@@ -16,6 +16,10 @@ border-radius: 12px;
 flex: none;
 order: 1;
 flex-grow: 0;
+margin: 5px 0px;
+.content{
+   padding-left: 10px;
+}
 }`
 
 export const AutorContainer = styled.div`
@@ -57,6 +61,7 @@ export const ExtraPostContainer = styled.div`
  width: 5vw;
  align-items: center;
  justify-content: space-between;
+ padding-left: 5px;
 }
 `
 

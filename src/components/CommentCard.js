@@ -66,7 +66,7 @@ export default function CommentCard(props) {
     return (
         <CommentsCardContainer>
             <AutorContainer>Enviado por:{comment.creator.name}</AutorContainer>
-            <div>{comment.content}</div>
+            <div className="content">{comment.content}</div>
             <ExtraPostContainer>
                 <LikeDislikePostContainer>
                     <img src={likeImg} onClick={like} />

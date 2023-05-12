@@ -10,6 +10,7 @@ export const HeadersContainer = styled.div`
  background: #EDEDED;
  height: 50px;
  margin-bottom: 10px;
+ font-family: 'Noto Sans', sans-serif;
   h2{
     color: #4088CB;
     cursor: pointer;

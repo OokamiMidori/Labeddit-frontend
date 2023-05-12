@@ -38,6 +38,8 @@ left: 30px;
 top: 126px;
 background: #EDEDED;
 border-radius: 12px;
+margin: 5px 0px;
+padding-left: 10px;
 }
 `
 
@@ -57,13 +59,16 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 12px 145px;
-
+color: #fff;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
 /* position: absolute; */
 width: 359px;
 height: 47px;
 left: 33px;
 top: 269px;
-
+margin: 5px 0px;
 background: linear-gradient(90deg, #FF6489 0%, #F9B24E 100%), #4088CB;
 border-radius: 12px;
 }`
