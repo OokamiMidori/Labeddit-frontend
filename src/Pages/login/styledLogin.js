@@ -29,6 +29,7 @@ export const FormContainer = styled.div`
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        font-family: 'Noto Sans', sans-serif;
 }
 `;
 
@@ -49,6 +50,7 @@ export const ButtonLoginContainer = styled.button`
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
+        font-family: 'Noto Sans', sans-serif;
 }
 `;
 
@@ -70,6 +72,7 @@ export const ButtonSignupContainer = styled.button`
         line-height: 25px;
         text-align: center;
         color: #FE7E02;
+        font-family: 'Noto Sans', sans-serif;
 }
 `;
 

@@ -102,7 +102,7 @@ export default function PostCard(props) {
     return (
         <PostCardStyledContainer>
             <AutorContainer>Enviando por:{post.creator.name}</AutorContainer>
-            <div>{post.content}</div>
+            <div className="content">{post.content}</div>
             <ExtraPostContainer>
                 <LikeDislikePostContainer>
                     <img src={likeImg} onClick={like} />

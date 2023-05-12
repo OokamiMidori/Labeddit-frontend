@@ -16,4 +16,8 @@ border-radius: 12px;
 flex: none;
 order: 1;
 flex-grow: 0;
+margin: 5px 0px;
+.content{ 
+    padding-left: 10px;
+}
 }`

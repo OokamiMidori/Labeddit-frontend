@@ -97,7 +97,7 @@ export const CommentPage = () => {
             <Headers />
             <PostInCommentStyled>
                 <AutorContainer>Enviado por: {name}</AutorContainer>
-                <div>{post.content}</div>
+                <div className="content">{post.content}</div>
                 <ExtraPostContainer>
                     <LikeDislikePostContainer>
                         <img src={likeImg} />
@@ -118,7 +118,7 @@ export const CommentPage = () => {
                         <CommentInputStyled value={content}
                             onChange={(e) => setContent(e.target.value)} />
                         <ButtonSendComment disabled={isLoading}>
-                            Postar
+                            Responder
                         </ButtonSendComment>
                     </section>
                 </form>

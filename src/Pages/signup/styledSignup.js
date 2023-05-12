@@ -31,7 +31,7 @@ export const EmailCheckboxContainer = styled.p`
  align-items: center;
  justify-content: center;
  padding:25px ;
- 
+ font-family: 'Noto Sans', sans-serif;
 }`
 
 export const InputCheckBoxContainer = styled.input`
@@ -47,6 +47,8 @@ export const TermosLegaisContainer = styled.p`
  line-height: 19px;
  padding: 34px;
 width: 100vw;
+text-align: center;
+font-family: 'Noto Sans', sans-serif;
  span{
     color: rgba(64, 136, 203, 1);
   }
