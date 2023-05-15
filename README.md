@@ -17,6 +17,19 @@ Você pode acessar o site também diretamente pelo link
 
 ### [projeto-integrador-labeddit-fabio-couto.surge.sh](projeto-integrador-labeddit-fabio-couto.surge.sh)
 
+Para ver o projeto rodando.
+
+### `Tecnologias`
+
+O Frontend foi craido utilizando as tecnologias:
+<li>ReactJS</li>
+<li>Styled Components</li>
+<li>Cunstom Hooks</li>
+<li>Axios</li>
+<li>Router</li>
+<li>UseState & UseEffect</li>
+<li>Global Context</li>
+
 ## BackEnd
 
 Para entender melhor sobre o Backend do projeto,\
